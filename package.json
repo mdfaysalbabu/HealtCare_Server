@@ -9,7 +9,8 @@
   "author": "fahimahammed <fahimahammed.cse@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "seed": "ts-node-dev --respawn --transpile-only prisma/seed.ts"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
@@ -18,25 +19,31 @@
     "@types/express": "^4.17.21",
     "@types/multer": "^1.4.11",
     "@types/node": "^20.11.27",
-    "prisma": "^5.11.0",
+    "@types/node-cron": "^3.0.11",
+    "prisma": "^5.12.1",
     "ts-node": "^10.9.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.4.2"
   },
   "dependencies": {
-    "@prisma/client": "5.11.0",
+    "@prisma/client": "^5.12.1",
     "@types/jsonwebtoken": "^9.0.6",
     "@types/nodemailer": "^6.4.14",
+    "axios": "^1.6.8",
     "bcrypt": "^5.1.1",
     "cloudinary": "^2.0.3",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
+    "date-fns": "^3.6.0",
     "dotenv": "^16.4.5",
     "express": "^4.18.3",
     "http-status": "^1.7.4",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
     "nodemailer": "^6.9.13",
+    "sslcommerz-lts": "^1.1.0",
+    "uuidv4": "^6.2.13",
     "zod": "^3.22.4"
   },
   "description": "Welcome to the backend repository for PH HealthCare, a tutorial project developed as part of the \"Level 2 Web Development Course\" offered by Programming Hero.",
